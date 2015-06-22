@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Parking</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Bootstrap/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/normalize.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site.css")"/>
+    @RenderSection("styles", false)
+</head>
+<body>
+    <header>
+        <h4>Parking Beta</h4>
+    </header>
+    <div id="main-body">
+        @RenderBody()
+    </div>
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/main.js")"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

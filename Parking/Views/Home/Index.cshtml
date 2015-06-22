@@ -1,0 +1,43 @@
+﻿@model Parking.Models.Home.IndexViewModel
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div id="parking">
+    <div id="controls">
+        <div class="time">
+            <h2></h2>
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="places">
+            @for (var i = 1; i <= 20; i++)
+            {
+                <div class="parking-row">
+                    @for (var j = 1; j <= 25; j++)
+                    {
+                        <div class="parking-place @(Model.Places.Any(x => x.Number == j && x.Row == i) ? "busy" : "")" data-client-place="@(i == 19 || i == 20 ? "true" : "false")" data-place-row="@i" data-number="@j">
+                            <div class="place-area"></div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <button class="btn btn-success btn-stats">Statistic</button>
+</div>
+
+<div id="main-modal"></div>
+@section scripts
+{
+    <script>
+        Parking.Url.GetInfo = '@Url.Action("GetInfo", "Home")';
+        Parking.Url.LeavePlace = '@Url.Action("LeavePlace", "Home")';
+        Parking.Url.HomeLink = '@Url.Action("Index", "Home")'
+        Parking.Url.Stats = '@Url.Action("Stats", "Home")'
+    </script>
+}

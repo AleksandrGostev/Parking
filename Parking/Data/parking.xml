@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parking total-clients="2" total-normal="4" total-money-normal="0">
+  <place>
+    <number>2</number>
+    <row>2</row>
+    <available>false</available>
+    <time>2014-06-12T06:24:12.7032222+00:00</time>
+  </place>
+  <place>
+    <number>8</number>
+    <row>2</row>
+    <available>false</available>
+    <client>true</client>
+    <time>2015-06-21T21:55:42.6600935+03:00</time>
+    <client>true</client>
+    <clientId>123</clientId>
+  </place>
+  <place>
+    <number>10</number>
+    <row>2</row>
+    <available>false</available>
+    <client>false</client>
+    <time>2015-06-21T21:55:46.2985317+03:00</time>
+  </place>
+  <place>
+    <number>11</number>
+    <row>2</row>
+    <available>false</available>
+    <client>false</client>
+    <time>2015-06-22T09:58:40.3604595+03:00</time>
+  </place>
+</parking>

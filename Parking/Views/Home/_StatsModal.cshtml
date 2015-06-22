@@ -1,0 +1,39 @@
+﻿@model Parking.Models.Home.StatsViewModel
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        Total Clients:
+                    </div>
+                    <div class="col-sm-8">
+                        @Model.TotalClients
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        Total normal users:
+                    </div>
+                    <div class="col-sm-8">
+                        @Model.TotalNormal
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        Total price:
+                    </div>
+                    <div class="col-sm-8">
+                        @Model.TotalPrice EUR
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

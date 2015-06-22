@@ -1,0 +1,17 @@
+c:\dev\Parking\Parking\bin\Parking.dll.config
+c:\dev\Parking\Parking\bin\Parking.dll
+c:\dev\Parking\Parking\bin\Parking.pdb
+c:\dev\Parking\Parking\bin\System.Web.Helpers.dll
+c:\dev\Parking\Parking\bin\System.Web.Mvc.dll
+c:\dev\Parking\Parking\bin\System.Web.Razor.dll
+c:\dev\Parking\Parking\bin\System.Web.Webpages.Deployment.dll
+c:\dev\Parking\Parking\bin\System.Web.Webpages.dll
+c:\dev\Parking\Parking\bin\System.Web.Webpages.Razor.dll
+c:\dev\Parking\Parking\bin\System.Web.Razor.xml
+c:\dev\Parking\Parking\bin\System.Web.Webpages.xml
+c:\dev\Parking\Parking\bin\System.Web.Webpages.Deployment.xml
+c:\dev\Parking\Parking\bin\System.Web.Webpages.Razor.xml
+c:\dev\Parking\Parking\bin\System.Web.Helpers.xml
+c:\dev\Parking\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+c:\dev\Parking\Parking\obj\Debug\Parking.dll
+c:\dev\Parking\Parking\obj\Debug\Parking.pdb

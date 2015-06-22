@@ -1,0 +1,59 @@
+﻿@model Parking.Models.Home.PlaceModalViewModel
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Row @Model.Row - Place @Model.Number</h4>
+            </div>
+            <div class="modal-body">
+                <form class="take-place-form" action="@Url.Action("TakePlace", "Home")">
+                    @if (Model.IsAvailable)
+                    {
+                        <div>This place is available</div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="client" name="isClient"> I am client
+                            </label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            Place is busy.
+                        </div>
+                        <div>
+                            Parked since: @Model.Time
+                        </div>
+                        <div>
+                            Time on praking: @String.Format("{0:dd} Days, {0:hh} Hours, {0:mm} Minutes", Model.TimeElapsed)
+                        </div>
+                        if (Model.IsClient)
+                        {
+                            <div>
+                                Client code: @Model.ClientId
+                            </div>
+                        }
+                    }
+                    <input type="hidden" class="row" name="row" value="@Model.Row"/>
+                    <input type="hidden" class="number" name="number" value="@Model.Number"/>
+                    <input type="hidden" class="reserved" name="reserved" value="@Model.IsReserved"/>
+                </form>
+                <div class="err-message alert alert-danger">
+                    This place is available only for clients
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                @if (Model.IsAvailable)
+                {
+                    <button type="submit" class="btn btn-primary take-place">Take place</button>
+                }
+                else
+                {
+                    <button class="btn btn-danger leave-place">Leave</button>   
+                }
+            </div>
+        </div>
+    </div>
+</div>

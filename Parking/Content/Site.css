@@ -1,0 +1,72 @@
+﻿body {
+    font-family: "Segoe UI", Arial;
+}
+
+header {
+    background-color: #262626;
+    color: #fff;
+}
+
+    header h4 {
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+    }
+
+#parking {
+    margin-top: 40px;
+}
+
+#parking #controls {
+    text-align: center;
+}
+
+    #parking .container {
+        border: 1px solid #c8cedc;
+        background-color: #fcfcfd;
+        min-height: 610px;
+    }
+
+    #parking #places {
+        padding: 15px 20px;
+    }
+
+        #parking #places .parking-place {
+            float: left;
+            width: 4%;
+        }
+
+            #parking #places .parking-place .place-area {
+                cursor: pointer;
+                height: 22px;
+                width: 17px;
+                background: url('images/place_available.png') 0 0 no-repeat;
+            }
+
+        #parking #places .parking-row {
+            clear: both;
+        }
+
+            #parking #places .parking-row:nth-child(odd) {
+                padding-top: 15px;
+            }
+
+            #parking #places .parking-row:first-child {
+                padding-top: 0px;
+            }
+
+.parking-place.busy .place-area {
+    background: url('images/place_busy.png') 0 0 no-repeat !important;
+}
+
+.take-place-form {
+    display: inline-block;
+}
+
+.btn-stats {
+    margin-top: 20px;
+}
+
+.err-message {
+    display: none;
+}
